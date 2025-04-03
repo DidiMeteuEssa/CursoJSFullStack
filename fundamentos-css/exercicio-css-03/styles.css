@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #030308;
+}
+
+.feature, .catalogo, .cta {
+    padding: 2rem;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.cta-botao {
+    background-color: #030308;
+    border-radius: 9999px;
+    color: white;
+    display: block;
+    margin: 2rem auto;
+    padding: 1em 1.5rem;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.generos > li {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.generos > li + li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.genero-botao > a,
+.veja-mais-botao > a {
+    background-color: #43abf6;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 9999px;
+    padding: 1rem 1.5rem;
+}
+
+.veja-mais-botao > a {
+    background-color: #030308;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #030308;
+    font-family: "Lora", serif;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
