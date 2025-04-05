@@ -3,16 +3,18 @@
     padding: 0;
     font-family: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.125rem;
 }
 
 :root {
     --color-background: #232323;
+    --color-foregroung: #EAEAEA;
     --color-white: #fff;
     --color-orange: #FFA501;
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     background-color: var(--color-background);
     color: var(--color-white);
     text-align: center;
@@ -20,6 +22,9 @@ header {
     padding: 1.5rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
 
 .header__nav {
     display: inline-block;
@@ -32,12 +37,13 @@ header {
 
 .hero {
     position: relative;
-    width: 100%;
+    min-width: 100%;
+    min-height: 44rem;
 }
 
 .hero__background {
     min-width: 100%;
-    max-height: 45rem;
+    max-height: 100%;
     position: absolute;
     object-fit: cover;
     object-position: top;
@@ -48,4 +54,146 @@ header {
     text-align: center;
     color: var(--color-white);
     padding: 20vh;
+}
+
+.hero__title {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.hero__text {
+    margin-top: 1.5rem;
+}
+
+.hero__cta,
+.contact__cta {
+    background-color: var(--color-orange);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-background);
+    padding: .75rem 1rem;
+    display: block;
+    margin: 1.25rem auto;
+    width: fit-content;
+    border-radius: .5rem;
+}
+
+.menu__title {
+    text-align: center;
+    margin: 3.5rem;
+    font-weight: 700;
+}
+
+.menu__option__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.menu__option-wrapper {
+    display: inline-block;
+    width: 28rem;
+    height: 26.5rem;
+    background-color: var(--color-foregroung);
+    overflow: hidden;
+    border-radius: .5em;
+    margin: 1.25rem;
+    margin-top: 0;
+}
+
+.menu__option-wrapper:nth-child(n+5) {
+    margin-top: 1.25rem;
+}
+
+.menu__option__title {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.menu__option__text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menu__option__text,
+.menu__option__title,
+.contact__infos {
+    text-align: left;
+}
+
+.about__us {
+    min-width: 100%;
+    min-height: 22vh;
+    position: relative;
+    margin: 3rem 0;
+    margin-bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background));
+}
+
+.about__us__background {
+    object-fit: cover;
+    min-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-position: center;
+    z-index: -1;
+}
+
+.about__us__foreground {
+    color: var(--color-white);
+    padding: 8vh;
+    text-align: center;
+}
+
+.about__us__title {
+    margin-bottom: 2rem;
+}
+
+.contact,
+.menu__options {
+    text-align: center;
+}
+
+.contact__title {
+    margin-top: 3.5rem;
+}
+
+td {
+    padding: 0 1rem;
+}
+
+.contact__infos,
+.menu__options {
+    margin: 0 auto;
+}
+
+.contact__text,
+.contact__infos {
+    margin-top: 2rem;
+}
+
+.contact__info__email {
+    color: var(--color-orange);
+    font-style: italic;
+}
+
+.contact__cta {
+    margin-top: 4rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold__italic {
+    font-style: italic;
+    font-weight: 700;
+}
+
+footer {
+    color: var(--color-orange);
+    background-color: var(--color-background);
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
 }
