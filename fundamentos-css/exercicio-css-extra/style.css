@@ -149,6 +149,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
+address {
+    font-style: normal;
+}
+
 .contact,
 .menu__options {
     text-align: center;
