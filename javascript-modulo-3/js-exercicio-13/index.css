@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #2B2B2B;
+    --primary-color: #73C9EB;
+    --primary-hover: #242424;
+    --player-1: #23aee6;
+    --player-2: #ff0043;
+    --font-color: #E2E4EE;
+    --win-placement: #4d4d4d;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    display: block;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    width: fit-content;
+    margin: auto auto;
+    color: var(--font-color);
+}
+
+#placements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.placement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    font-size: 6rem;
+}
+
+#result {
+    width: 100%;
+    margin-top: 2rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#reset {
+    display: none;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--font-color);
+    padding: 1rem 1rem;
+}
+
+#sort {
+    margin: 1.55rem auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--font-color);
+    padding: 1rem 1rem;
+}
+
+#result,
+#reset,
+#sort,
+#title,
+.placement {
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 0.8rem;
+    background-color: var(--bg-color);
+}
+
+.placement:hover,
+#reset:hover,
+#sort:hover {
+    background-color: var(--primary-hover);
+}
+
+#title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+header {
+    display: none;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.player1 {
+    color: var(--player-1)
+}
+
+.player2 {
+    color: var(--player-2)
+}
+
+.draw {
+    color: var(--font-color)
+}
