@@ -1,0 +1,50 @@
+#banner-1 {
+    background-image: url('../img/1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-grande {
+    padding: 5rem 0;
+}
+
+.fundo-preto {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fundo-cinza {
+    background-color: rgba(39, 39, 39, 0.7);
+}
+
+#carrocel-imagens img {
+    border-radius: 14px;
+}
+
+.card {
+    margin-top: 2rem;
+    width: 22rem;
+    align-items: center;
+}
+
+.card img {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 0;
+}
+
+#depoimento {
+    margin-top: 10rem;
+}
+
+.dream-destiny {
+    background-image: url('../img/2.webp');
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 10rem;
+}
+
+.destiny-text{
+    padding: 7rem 0;
+}
+
