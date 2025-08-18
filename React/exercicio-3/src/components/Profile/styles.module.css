@@ -1,0 +1,57 @@
+.container {
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.75);
+}
+
+.picture {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 2.5rem;
+    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.75);
+}
+
+.name {
+    margin-bottom: 1.5rem;
+}
+
+.textField {
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(94, 28, 138, 1);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container .textField:nth-of-type(1)  {
+    border-top: 2px solid rgba(94, 28, 138, 1);
+}
+
+.button {
+    width: 140px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background: #5e1c8a;
+    background: linear-gradient(90deg, rgba(94, 28, 138, 1) 39%, rgba(167, 84, 222, 1) 86%);
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    padding: .8rem 0;
+    transition: transform .2s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container .button:last-child {
+    margin-bottom: 1rem;
+}

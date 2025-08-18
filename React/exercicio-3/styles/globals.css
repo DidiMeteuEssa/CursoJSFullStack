@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif
+}
+
+.app {
+    background-color: #7d1bbe;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
